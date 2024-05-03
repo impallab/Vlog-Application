@@ -27,8 +27,8 @@ function App() {
       .finally(()=>setLoading(false))
   },[])
   return !loading ? (
-    <div>
-      <div>
+    <div className='min-h-screen flex flex-wrap content-between bg-purple-500'>
+      <div className='w-full block'>
         <Header/>
         <main>
           <Outlet/>
