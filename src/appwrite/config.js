@@ -75,6 +75,22 @@ export class Service {
             console.log("Service::getPost::error", error)
         }
     }
+    //function to get all posts 
+    async getPosts(queries = [Query.equal("status", "active")]) {
+        try {
+            return await this.databases.listDocuments(
+                conf.appwriteDatabaseId,
+                conf.appwriteCollectionId,
+                queries,
+
+
+            )
+        } catch (error) {
+            console.log("Appwrite serive :: getPosts :: error", error);
+            return false
+        }
+    }
+
     //function to get all the active post
     async getActivePosts(queries = [Query.equal("status", "active")]) {
         try {
@@ -122,7 +138,7 @@ export class Service {
                 fileId
             )
         } catch (error) {
-            console.log("Service::getFilePreview::error",error);
+            console.log("Service::getFilePreview::error", error);
             return false
         }
     }
