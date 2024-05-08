@@ -4,7 +4,7 @@ import { Button, Input, RTE, Select } from "../index"
 import appwriteService from "../../appwrite/config"
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-k
+
 
 function PostForm(post) {
     const { register, handleSubmit, watch, setValue, controll, getValues } = useForm({
