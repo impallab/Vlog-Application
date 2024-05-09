@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import authService from '../appwrite/auth'
 import { Link, useNavigate } from 'react-router-dom'
 import { login } from '../store/authSlice'
-import { Button, Input, Logo } from "./index"
+import { Button, Input, Logo } from "./index.js"
 import { useForm } from 'react-hook-form'
 import { useDispatch } from "react-redux"
 
 
 function Signup() {
     const navigate = useNavigate()
-    const [error, setError] = useState()
+    const [error, setError] = useState("")
     const dispatch = useDispatch()
     const { register, handleSubmit } = useForm()
 

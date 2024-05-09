@@ -1,6 +1,6 @@
 import Container from "./container/Container";
 import Input from "./Input";
-import SignUp from "../pages/SignUp";
+import Signup from "./Signup";
 import AuthLayout from "./AuthLayout";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
@@ -14,4 +14,4 @@ import Select from "./Select"
 import Login from "./Login";
 
 
-export { AuthLayout, Container, Footer, Header, Input, Logo, LogoutBtn, PostCard, PostForm, RTE, SignUp,Button,Select,Login };
+export { AuthLayout, Container, Footer, Header, Input, Logo, LogoutBtn, PostCard, PostForm, RTE, Signup,Button,Select,Login };

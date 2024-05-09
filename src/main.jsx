@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from "react-redux";
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
-import Signup from './components/Signup.jsx';
+import Signup from './pages/SignUp.jsx';
 import { AuthLayout } from './components/index.js';
 import './index.css';
 import Home from './pages/Home.jsx';

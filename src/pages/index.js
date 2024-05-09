@@ -5,6 +5,7 @@ import Home from "./Home"
 import Login from "./Login"
 import Post from "./Post"
 import SignUp from "./SignUp"
+import { Button,Input,Logo } from "../components"
 
 export {
     AddPost,
@@ -13,5 +14,8 @@ export {
     Home,
     Login,
     Post,
-    SignUp
+    SignUp,
+    Button,
+    Input,
+    Logo
 }
